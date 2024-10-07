@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    min-height: 75vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: #24292e38;
+    padding-bottom: 15px;
+}
+
+#text {
+    height: 260px;
+    width: 260px;
+    position: relative;
+    animation: effect 18s linear infinite;
+    padding: 0;
+}
+
+@keyframes effect {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+span {
+    position: absolute;
+    left: 50%;
+    transform-origin: 0px 130px;
+    transform-style: flat;
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 21pt;
+    color: rgb(204, 51, 51);
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #24292E;
+    font-size: 20px;
+    font-weight: 650;
+    font-family: Raleway;
+}
+
+nav img {
+    height: 90px;
+    padding: 0;
+}
+
+.active {
+    color: rgb(204, 51, 51);
+}
+
+nav a:hover {
+    color: rgb(204, 51, 51);
+}
+
+
+#table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin: 40px 70px;
+    margin-bottom: 80px;
+}
+
+table {
+    padding-bottom: 30px;
+    border-collapse: collapse;
+    margin: 10px 0 40px 0;
+}
+
+tr {
+    display: table;
+}
+
+th {
+    width: 15%;
+    height: 42px;
+    color: #24292E;
+    font-family: Raleway;
+}
+
+h3 {
+    color: #24292E;
+    font-family: Raleway;
+}
+
+td:hover {
+    cursor: pointer;
+}
+
+.searches {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    margin-top: 50px;
+}
+
+#search_field,
+#search_button,
+#clear_button,
+#create,
+#group {
+    margin-top: 30px;
+}
+
+button {
+    appearance: none;
+    background-color: #FAFBFC;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+    color: #24292E;
+    cursor: pointer;
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
+    padding: 6px 16px;
+    transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    word-wrap: break-word;
+}
+
+button:hover {
+    background-color: #F3F4F6;
+    text-decoration: none;
+    transition-duration: 0.1s;
+}
+
+button:active {
+    background-color: #EDEFF2;
+    box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+    transition: none 0s;
+}
+
+button:focus {
+    outline: 1px transparent;
+}
+
+
+input {
+    height: 30px;
+    width: 150px;
+}
+
+#input_field {
+    margin-bottom: 20px;
+    font-size: 11pt;
+}
+
+#search_field {
+    font-size: 11pt;
+    width: 180px;
+    height: 34px;
+}
+
+td {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 11pt;
+    width: 15%;
+    word-wrap: break-word;
+    padding: 8px 5px;
+}
+
+#td {
+    padding: 10px;
+    border: 2px solid #24292e38;
+    margin: 0;
+
+}
+
+tr {
+    width: 100%;
+}
+
+p {
+    padding-left: 20px;
+    font-family: Raleway;
+    font-size: 10pt;
+}
+
+img {
+    padding-top: 50px;
+    height: 20rem;
+}
+
+#title {
+    font-weight: 500;
+    font-size: 6rem;
+    font-family: Koulen;
+    color: #24292e
+}
+
+#back_button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 50px;
+    margin-left: 50px;
+    border: none;
+    background-color: white;
+    box-shadow: none;
+}
+
+.group {
+    font-family: Raleway;
+    font-size: 14px;
+    background-color: #FAFBFC;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+    color: #24292E;
+    cursor: pointer;
+    line-height: 20px;
+    padding: 6px 16px;
+    font-weight: 500;
+}
+
+#info {
+    margin: 30px 0;
+    color: rgb(204, 51, 51);
+    font-size: 9pt;
+    font-family: Raleway;
+}
+
+#grund {
+    border: 2px solid #24292E;
+    margin: 10px;
+    margin-bottom: 80px;
+    width: 80%;
+}
+
+#grund td {
+    padding: 10px 15px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+#grund th {
+    box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(182, 36, 36, 0.811) 0 1px 0 inset;
+    border-bottom: 2px solid #24292e38;
+    padding: 15px 15px;
+    background-color: rgb(204, 51, 51);
+    color: white;
+}
+
+#grund_tit {
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-size: 15pt;
+}
+
+
+#back_button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 30px;
+    margin-left: 50px;
+    border: none;
+}
+
+
+.group,
+input {
+    font-family: Raleway;
+    font-size: 14px;
+    background-color: #FAFBFC;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+    color: #24292E;
+    cursor: pointer;
+    line-height: 20px;
+    padding: 6px 16px;
+    font-weight: 500;
+}
+
+h3,
+label {
+    color: #24292E;
+    font-family: Raleway;
+
+}
+
+h3 {
+    font-size: 12pt;
+    font-weight: 500;
+}
+
+.options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    padding-top: 20px;
+}
+
+
+.date {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+label {
+    font-size: 10pt;
+}
+
+#results {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Raleway;
+}
+
+.stat_title {
+    font-size: 14pt;
+    font-family: Raleway;
+}
+
+#statistics_button,
+#stat_group,
+#stat_pass_group,
+#statistics_pass_button,
+#delete_chosen {
+    margin-top: 15px;
+}
+
+#stat_pass_group,
+#statistics_pass_button,
+#delete_chosen {
+    margin-top: 30px;
+}
+
+.thisdate {
+    height: 34px;
+}
+
+
+#plan_table {
+    border-collapse: collapse;
+    width: 80%;
+    margin-top: 20px;
+}
+
+#plan_table td {
+    border: 1px solid #24292E;
+    width: 11%;
+}
+
+#plan_table th {
+    width: 11%;
+}
+
+#plan_table tr th:nth-child(2),
+#plan_table tr td:nth-child(2) {
+    width: 60%;
+}
+
+#plan_table tr {
+    display: table;
+}
+
+#plan_table tr td:first-child,
+#plan_table tr th:first-child {
+    width: 5%;
+}
+
+#plan_table tr td:nth-child(3),
+#plan_table tr td:nth-child(4) {
+    text-align: center;
+}
+
+#stat_group_plan,
+#save_plan {
+    margin-top: 30px;
+}
+
+#get_group_button {
+    margin-top: 30px;
+}
+
+#mon_plan_date {
+    height: 35px;
+}
+
+#dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+#dropdown-content {
+    padding-top: 10px;
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+#dropy {
+    cursor: pointer;
+}
+
+#dropdown-content a {
+    cursor: pointer;
+    padding: 15px 10px 0 0;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+}
+
+#dropdown:hover #dropdown-content {
+    display: block;
+}
+
+#table .all {
+    text-align: center;
+}
+
+input[type="checkbox"] {
+    width: 3em;
+    height: 3rem;
+    accent-color: rgb(204, 51, 51);
+}
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100vw;
+    /* Full width */
+    height: 100vh;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+    font-family: Raleway;
+    line-height: 1.8;
+}
+
+.modal-content h2 {
+    padding-bottom: 10px;
+}
+
+/* The Close Button */
+.close {
+    float: right;
+    margin-top: 50px;
+
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
