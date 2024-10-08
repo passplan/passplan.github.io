@@ -909,7 +909,7 @@ function saveplan_kuy() {
 
     let trs = document.querySelectorAll(`tr`);
     trs.forEach(element => {
-        if (element.children[3].classList[0] == "chosen") {
+        if (element.children[2].classList[0] == "chosen") {
             elements.push(element.children[1])
         }
     });
