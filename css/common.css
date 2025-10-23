@@ -54,16 +54,6 @@ footer p {
     }
 }
 
-span {
-    position: absolute;
-    left: 50%;
-    transform-origin: 0px 130px;
-    transform-style: flat;
-    font-family: 'Raleway';
-    font-weight: 600;
-    font-size: 21pt;
-    color: rgb(204, 51, 51);
-}
 
 nav {
     width: 100%;
@@ -523,4 +513,86 @@ input[type="checkbox"] {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+.circle {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: #fff200;
+    text-align: center;
+    font-size: 8pt;
+}
+
+
+.circle.yellowwhite {
+    background-color: rgb(255, 243, 112);
+}
+
+.circle.yellow {
+    background-color: rgb(255, 235, 10);
+}
+
+.circle.orangewhite {
+    background-color: rgb(254, 180, 134);
+}
+
+/* Add specific colors */
+.circle.orange {
+    background-color: rgb(253, 117, 33);
+}
+
+.circle.greenwhite {
+    background-color: rgb(162, 205, 183);
+}
+
+.circle.green {
+    background-color: rgb(64, 119, 90);
+}
+
+.circle.blue {
+    background-color: rgb(52, 89, 149);
+}
+
+.circle.brown {
+    background-color: rgb(72, 39, 40);
+}
+
+.circle.blackone {
+    background-color: rgb(0, 0, 0);
+}
+
+.circle.blacktwo {
+    background-color: rgb(0, 0, 0);
+}
+
+.circle.blackthree {
+    background-color: rgb(0, 0, 0);
+}
+
+.circle.all {
+    background-color: rgb(212, 116, 190);
+}
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    table {
+        display: none;
+    }
+
+    .modal-content * {
+        visibility: visible;
+    }
+
+    .modal {
+        overflow: visible;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
 }
